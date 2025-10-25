@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG Recomeço Pet - Adoção e Cuidado de Animais</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
     <header>
-        <h1>ONG Recomeço Pet</h1>
+        <h1>Recomeço Pet</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
@@ -22,12 +25,12 @@
 
     <main>
         <section id="banner">
-            <h2>Construindo finais felizes para quem mais precisa de nós.</h2>
-            <img src="imagens/banner.jpg" alt="Um cachorro e um gato" width="800">
+            <h2>Recomeço Pet - Adoção e cuidado de animais</h2>
+
         </section>
 
         <section id="quem-somos">
-            <h2>Quem Somos</h2>
+            <h2>Quem somos</h2>
             <p>
                 O <strong>Projeto Recomeço Pet</strong> é uma organização sem fins lucrativos dedicada ao resgate,
                 cuidado e adoção de animais de rua. Nascemos do amor incondicional pelos animais e da crença de que todo
@@ -54,7 +57,7 @@
         </section>
 
         <section id="missao-valores">
-            <h2>Nossa Missão</h2>
+            <h2>Nossa missão</h2>
             <p>
                 Nossa missão é resgatar animais em situação de vulnerabilidade, oferecer tratamento veterinário,
                 castração, e encontrar famílias responsáveis através de feiras de adoção e divulgação consciente.<br>
@@ -64,7 +67,7 @@
     </main>
 
     <footer>
-        <h2>Informações de Contato</h2>
+        <h2>Informações de contato</h2>
         <address>
             <p>Email: <a href="contato@recomecopet.org">contato@recomecopet.org</a></p>
             <p>Telefone: <a href="tel:+5566999998888">(66) 66666-6666</a></p>
@@ -72,6 +75,13 @@
         </address>
         <p>&copy; 2025 Projeto Recomeço Pet. Todos os direitos reservados.</p>
     </footer>
+    <div id="modal-alerta" class="modal-overlay" aria-hidden="true">
+        <div class="modal-dialogo" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+            <h3 id="modal-titulo">Aviso</h3>
+            <p id="modal-mensagem"></p>
+            <button id="modal-fechar" class="btn-fechar">OK</button>
+        </div>
+    <script src="js/main.js"></script>
 
 </body>
 

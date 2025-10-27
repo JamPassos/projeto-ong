@@ -3,6 +3,35 @@
 
     document.addEventListener('DOMContentLoaded', () => {
 
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+
+        function updateThemeButton(theme) {
+            if (themeToggle) { // Adiciona verificação se o botão existe
+                if (theme === 'dark') {
+                    themeToggle.setAttribute('aria-label', 'Desativar modo escuro');
+                    themeToggle.setAttribute('title', 'Desativar modo escuro');
+                } else {
+                    themeToggle.setAttribute('aria-label', 'Ativar modo escuro');
+                    themeToggle.setAttribute('title', 'Ativar modo escuro');
+                }
+            }
+        }
+
+        let currentTheme = htmlEl.classList.contains('dark-mode') ? 'dark' : 'light';
+        updateThemeButton(currentTheme);
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                htmlEl.classList.toggle('dark-mode');
+
+                let currentTheme = htmlEl.classList.contains('dark-mode') ? 'dark' : 'light';
+                localStorage.setItem('theme', currentTheme);
+                
+                updateThemeButton(currentTheme);
+            });
+        }
+
         const modalAlerta = document.getElementById('modal-alerta');
         const modalTitulo = document.getElementById('modal-titulo');
         const modalMensagem = document.getElementById('modal-mensagem');

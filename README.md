@@ -1,31 +1,75 @@
-# Projeto ONG Recomeço Pet 
+# 🐾 Projeto ONG Recomeço Pet
 
-## Descrição do Projeto
+![Status](https://img.shields.io/badge/status-concluído-green)
+![Licença](https://img.shields.io/badge/license-MIT-blue)
 
-Este é o repositório oficial do **"ONG Recomeço Pet"**, uma plataforma web desenvolvida para uma ONG fictícia de resgate e adoção de animais de rua. O objetivo principal da plataforma é fornecer uma presença digital profissional e funcional para a organização, permitindo a divulgação de seus projetos, a captação de voluntários e a centralização de informações importantes.
+Site institucional completo para uma ONG fictícia de adoção de animais, desenvolvido como projeto acadêmico.
 
-### Contexto Acadêmico
-
-Este projeto foi desenvolvido como parte da avaliação da disciplina de **Desenvolvimento Front-End Para Web** para o curso de **Ciência da Computação**.
+>  **Site no GitHub Pages:** [https://SEU-USUARIO-DO-GITHUB.github.io/PROJETO-ONG/](https://SEU-USUARIO-DO-GITHUB.github.io/PROJETO-ONG/)
+> *(**Nota:** Substitua `SEU-USUARIO-DO-GITHUB` e `PROJETO-ONG` pelo seu usuário e nome de repositório)*
 
 ---
 
-## Entrega 1: A Base Estrutural com HTML5
+## Sobre o Projeto
 
-Esta primeira fase do projeto focou exclusivamente na construção da estrutura semântica do site, utilizando apenas **HTML5**. O objetivo foi criar uma base sólida, acessível e bem organizada.
+O projeto simula o desenvolvimento front-end de um site real, progredindo em três fases principais:
 
-### Funcionalidades Implementadas (HTML)
+1.  **Entrega 1:** Estruturação semântica com **HTML5**.
+2.  **Entrega 2:** Estilização responsiva com **CSS3**, aplicando um Design System com Grid e Flexbox.
+3.  **Entrega 3:** Interatividade avançada com **JavaScript**, GitFlow, Acessibilidade e Otimização para produção.
 
-* **Página Inicial (`index.html`):** Apresenta a ONG, sua missão na seção "Quem Somos" e informações de contato no rodapé.
-* **Página de Projetos (`projetos.html`):** Detalha as iniciativas da organização, como feiras de adoção, e orienta os visitantes sobre como se tornar um voluntário ou realizar uma doação.
-* **Página de Cadastro (`cadastro.html`):** Contém um formulário complexo para o registro de novos voluntários.
+## Principais Funcionalidades
+
+O site implementa uma série de requisitos técnicos para garantir uma experiência de usuário profissional e acessível.
+
+### Funcionalidades de JavaScript
+* **Validação de Formulário:** 
+* **Máscaras de Input:** 
+* **Modal Customizado:** 
+* **Modo Escuro (Dark Mode):**    
+
+### Acessibilidade (WCAG 2.1 - Nível AA)
+* **Navegação por Teclado:** 
+* **Contraste de Cor:** A paleta de cores (tanto no modo claro quanto no escuro) foi verificada para garantir um contraste mínimo de `4.5:1` para texto, atendendo ao nível AA.
+* **HTML Semântico:** Uso correto de tags (`<main>`, `<nav>`, `<article>`, `<label>`) para leitores de tela.
+* **Atributos ARIA:** Implementação de atributos `aria-` no modal e no botão de tema para acessibilidade.
+
+### Otimização e Versionamento
+* **GitFlow:** O projeto utiliza a estratégia de branching `develop` (para desenvolvimento) e `main` (para produção/releases).
+* **Minificação:** Os arquivos `style.css` e `main.js` são minificados (`.min.css`, `.min.js`) na versão de produção.
+* **Compressão de Imagens:** 
 
 ---
 
 ## Tecnologias Utilizadas
 
-Para esta entrega, foi utilizado exclusivamente:
+* **HTML5:** 
+* **CSS3:** 
+* **JavaScript (ES6+):** 
+* **Git & GitHub:** 
+* **Font Awesome:** 
 
-* **HTML5**
+---
+
+## Estrutura do Projeto
+
+```
+/PROJETO-ONG
+├── css/
+│   ├── style.css         
+│   └── style.min.css     
+├── js/
+│   ├── main.js           
+│   └── main.min.js       
+├── imagens/
+│   ├── (Imagens comprimidas do projeto)
+├── .gitignore            
+├── index.html            
+├── projetos.html         
+├── cadastro.html         
+└── README.md             
+```
+---
+
 
 

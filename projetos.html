@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossos Projetos - Projeto Recomeço Pet</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
 </head>
 
 <body>
@@ -17,6 +26,12 @@
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Seja um Voluntário</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -34,15 +49,14 @@
                     Regularmente, organizamos feiras de adoção em parques e praças públicas.<br>
                     É a oportunidade perfeita para que nossos resgatados conheçam suas futuras famílias.<br>
                     Todos os animais são castrados, vacinados e vermifugados.<br>
-
                 </p>
 
-                <img src="imagens/feira_adocao.jpg" alt="Pessoas interagindo com cães e gatos." width="572"
+                <img src="imagens/feira_adocao.jpg" alt="Voluntários da ONG em uma feira de adoção com cães e gatos." width="572"
                     height="705">
-                <img src="imagens/gato_cinza.jpeg" alt="gato cinza." width="572" height="705">
-                <img src="imagens/gato_laranga.jpeg" alt="gato laranja." width="572" height="705">
-                <img src="imagens/cachorro.jpg" alt="cachorro." width="600">
-                <img src="imagens/cachorro_caramelo.jpg" alt="caramelo." width="600">
+                <img src="imagens/gato_cinza.jpeg" alt="Gato cinza de pelo curto olhando para a câmera." width="572" height="705">
+                <img src="imagens/gato_laranga.jpeg" alt="Gato laranja deitado em um sofá." width="572" height="705">
+                <img src="imagens/cachorro.jpg" alt="Cachorro de porte médio sorrindo para a câmera em um gramado." width="600">
+                <img src="imagens/cachorro_caramelo.jpg" alt="Cachorro vira-lata caramelo deitado em uma calçada." width="600">
 
             </article>
 
@@ -54,9 +68,9 @@
                     Realizamos mutirões de castração a baixo custo para a comunidade carente.
                 </p>
 
-                <img src="imagens/medica_com_gato.jpg" alt="Veterinário cuidando de um gato em uma clínica." width="600"
+                <img src="imagens/medica_com_gato.jpg" alt="Veterinária segurando um gato com cone de proteção em uma clínica." width="600"
                     height="705">
-                <img src="imagens/castracao.png" alt="castração." width="600" height="705">
+                <img src="imagens/castracao.png" alt="Banner ilustrativo sobre a importância da castração de animais." width="600" height="705">
 
             </article>
         </section>
@@ -81,6 +95,12 @@
     </main>
 
     <footer>
+        <h2>Informações de contato</h2>
+        <address>
+            <p><i class="fa-solid fa-envelope"></i> Email: <a href="contato@recomecopet.org">contato@recomecopet.org</a></p>
+            <p><i class="fa-solid fa-phone"></i> Telefone: <a href="tel:+5566999998888">(66) 66666-6666</a></p>
+            <p><i class="fa-solid fa-location-dot"></i> Endereço: Salvador, BA</p>
+        </address>
         <p>&copy; 2025 Projeto Recomeço Pet. Todos os direitos reservados.</p>
     </footer>
     <div id="modal-alerta" class="modal-overlay" aria-hidden="true">
@@ -89,7 +109,9 @@
             <p id="modal-mensagem"></p>
             <button id="modal-fechar" class="btn-fechar">OK</button>
         </div>
-        <script src="js/main.js"></script>
+    </div>
+    
+    <script src="js/main.min.js"></script>
 
 </body>
 

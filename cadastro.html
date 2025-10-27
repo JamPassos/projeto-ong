@@ -5,7 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de Voluntário - ONG Recomeço Pet</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
 </head>
 
 <body>
@@ -16,6 +25,12 @@
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="cadastro.html">Seja um Voluntário</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -89,6 +104,12 @@
     </main>
 
     <footer>
+        <h2>Informações de contato</h2>
+        <address>
+            <p><i class="fa-solid fa-envelope"></i> Email: <a href="contato@recomecopet.org">contato@recomecopet.org</a></p>
+            <p><i class="fa-solid fa-phone"></i> Telefone: <a href="tel:+5566999998888">(66) 66666-6666</a></p>
+            <p><i class="fa-solid fa-location-dot"></i> Endereço: Salvador, BA</p>
+        </address>
         <p>&copy; 2025 Projeto Recomeço Pet. Todos os direitos reservados.</p>
     </footer>
 
@@ -100,7 +121,7 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <<script src="js/main.min.js"></script>
 </body>
 
 </html>

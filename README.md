@@ -5,9 +5,6 @@
 
 Site institucional completo para uma ONG fictícia de adoção de animais, desenvolvido como projeto acadêmico.
 
->  **Site no GitHub Pages:** [https://SEU-USUARIO-DO-GITHUB.github.io/PROJETO-ONG/](https://SEU-USUARIO-DO-GITHUB.github.io/PROJETO-ONG/)
-> *(**Nota:** Substitua `SEU-USUARIO-DO-GITHUB` e `PROJETO-ONG` pelo seu usuário e nome de repositório)*
-
 ---
 
 ## Sobre o Projeto
